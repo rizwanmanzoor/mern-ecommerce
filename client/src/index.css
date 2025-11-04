@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+@theme {
+  /* Font Variables */
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Manrope", sans-serif;
+
+  /* Color Variables */
+  /* --color-primary: oklch(0.705 0.213 47.604);
+  --color-secondary: #f59e0b;
+  --color-accent: #10b981;
+  --color-background: #ffffff;
+  --color-text: #111827; */
+
+  /* Brand Colors */
+  --color-brand-red: #ea2e0e;
+  --color-brand-white: #ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+    width: 0;
+    height: 0;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+    width: 0;
+    height: 0;
+  }
+}
