@@ -3,21 +3,45 @@ import {
   TbBrandInstagram,
   TbBrandTwitter,
 } from "react-icons/tb";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Topbar = () => {
   return (
     <div className="bg-brand-red text-brand-white">
       <div className="container mx-auto flex items-center justify-between py-2 px-4">
         {/* icons */}
-        <div className="hidden md:flex items-center gap-4">
-          <a href="#" className="hover:text-gray-300">
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300"
+          >
             <TbBrandFacebook className="h-5 w-5" />
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300"
+          >
             <TbBrandInstagram className="h-5 w-5" />
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a
+            href="https://www.x.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300"
+          >
             <TbBrandTwitter className="h-5 w-5" />
+          </a>
+          <a
+            href="https://www.api.whatsapp.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300"
+          >
+            <FaWhatsapp className="h-5 w-5" />
           </a>
         </div>
 
