@@ -1,10 +1,13 @@
+import { Toaster } from "sonner";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import UserLayout from "./components/Layout/UserLayout";
+
 import Home from "./pages/Home";
+import UserLayout from "./components/Layout/UserLayout";
 
 const App = () => {
   return (
     <BrowserRouter>
+    <Toaster position="top-right" richColors />
       <Routes>
         {/* User Layout */}
         <Route path="/" element={<UserLayout />}>
